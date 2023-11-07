@@ -3,8 +3,94 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Name Here</title>
-    <link rel="stylesheet" href="css/styles.css">
+    <title>Braxton Kapp</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #000;
+            color: #fff;
+        }
+
+        .centered-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 50%;
+        }
+
+        .centered-image {
+            max-width: 100%;
+            height: auto;
+        }
+
+        header nav {
+            display: flex;
+            position: absolute;
+            justify-content: space-between;
+            padding: 1em;
+            color: black;
+        }
+
+        header .logo {
+            font-weight: bold;
+            align-self: left;
+            font-size: 1.5em;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        nav ul li {
+            padding: 0 1em;
+        }
+
+        nav ul li a {
+            justify-content: right;
+            text-decoration: none;
+            color: #000000;
+        }
+
+        #about {
+            text-align: center;
+            padding: 2em;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background: black;
+            color: white;
+            border: 2px solid white;
+            text-decoration: none;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1em 0;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+        }
+
+        footer ul li {
+            padding: 0 1em;
+        }
+
+        footer ul li a {
+            text-decoration: none;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -18,21 +104,27 @@
             </ul>
         </nav>
     </header>
+   
     <main>
+        <div class="centered-container">
+            <!-- Replace 'path_to_your_image.jpg' with the actual path to your image -->
+            <img src="img/IMG_0668.JPG" alt="Braxton Kapp" class="centered-image">
+        </div>
         <section id="about">
             <h1>BRAXTON KAPP</h1>
             <p>lets do some designing</p>
             <a href="#" class="btn">Download Resume</a>
         </section>
-        <!-- You can add more sections here to make the page twice as tall -->
     </main>
+
+    <footer>
+        <p>&copy; 2023 Braxton Kapp. All Rights Reserved.</p>
+        <ul>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#skills">SKILLS</a></li>
+            <li><a href="#work">WORK</a></li>
+            <li><a href="#contact">CONTACT</a></li>
+        </ul>
+    </footer>
 </body>
 </html>
-
-<footer>
-    <p>&copy; 2023 Braxton Kapp. All Rights Reserved.</p>
-    <li><a href="#about">ABOUT</a></li>
-                <li><a href="#skills">SKILLS</a></li>
-                <li><a href="#work">WORK</a></li>
-                <li><a href="#contact">CONTACT</a></li>
-</footer>

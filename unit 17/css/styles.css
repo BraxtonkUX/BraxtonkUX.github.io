@@ -1,136 +1,78 @@
-/* Reset some default styles */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body, html {
-    height: 50%; /* Make the page twice as tall */
-    font-family: Arial, sans-serif;
-}
-
-header {
-    background: #333;
-    color: white;
-    padding: 1rem 0;
-    position: fixed;
-    width: 100%;
-    top: 0;
-}
-
-nav {
+    height: 100%;
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #000000;
+  }
+  
+  .wrapper {
+    height: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-nav ul li {
-    margin-left: 20px;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-nav ul li a:hover {
-    color: #ccc;
-}
-h1 {
-    padding-top: rem;
-}
-.main {
-    padding-top: 60px; /* Give some space for the fixed header */
-}
-
-section {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 20px;
-    background: black;
-    color: white;
-    text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #555;
-}
-
-footer {
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .header {
+    text-align: left;
+    padding: 20px;
+    font-size: 24px;
+  }
+  
+  .footer {
     text-align: center;
     padding: 20px;
-    background: #333;
-    color: white;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-}
-
-footer p {
-    margin: 0;
-    font-size: 0.9em;
-}
-
-
-footer {
+    font-size: 14px;
+  }
+  
+  .content {
+    flex-grow: 1;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-}
-
-footer ul {
-    list-style: none;
-    display: flex;
-}
-
-footer ul li {
-    margin-left: 20px;
-}
-
-footer ul li a {
-    color: white;
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-footer ul li a:hover {
-    color: #ccc;
-}
-h1 {
-    padding-top: rem;
-}
-.main {
-    padding-top: 60px; /* Give some space for the fixed header */
-}
-
-section {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.btn {
+    background-image: url('path_to_your_image.jpg'); /* Replace with your image path */
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .title {
+    font-size: 36px;
+    text-transform: uppercase;
+    margin: 0;
+  }
+  
+  .subtitle {
+    font-size: 18px;
+    margin: 10px 0;
+  }
+  
+  .resume-button {
     display: inline-block;
     padding: 10px 20px;
-    margin-top: 20px;
-    background: black;
-    color: white;
+    background-color: #ffffff;
+    color: #000000;
     text-decoration: none;
-    transition: background-color 0.3s ease;
-}
-
-.btn:hover {
-    background-color: #555;
-}
+    border-radius: 5px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .resume-button:hover {
+    background-color: #eaeaea;
+  }
+  
+  /* This is to ensure that the link is centered with flexbox if there is additional text or elements */
+  .link-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Media queries for responsiveness */
+  @media (max-width: 768px) {
+    .header, .footer {
+      text-align: center;
+    }
+  }
+  
